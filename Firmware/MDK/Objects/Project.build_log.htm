@@ -1,0 +1,179 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 N210508, 11, LIC=TIVNB-2875H-74RS0-B8VGS-URX7G-6TX7P
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.34.0.0
+Toolchain Path:  D:\install dir\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+F:\fast_file\work_file\XX26\APP\i2cmaster_NEW\i2cmaster\MDK\gd32f103rx.uvprojx
+Project File Date:  05/27/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\install dir\keil\ARM\ARMCC\Bin'
+Rebuild target 'gd32f103rx'
+compiling systick.c...
+compiling FLASH.c...
+compiling App.c...
+..\USER\App.c(116): warning:  #550-D: variable "checksum"  was set but never used
+  	uint8_t  checksum = 0,i = 0,checksumnew = 0,res = 0;
+..\USER\App.c(116): warning:  #550-D: variable "checksumnew"  was set but never used
+  	uint8_t  checksum = 0,i = 0,checksumnew = 0,res = 0;
+..\USER\App.c: 2 warnings, 0 errors
+compiling gd32f10x_it.c...
+compiling bsp_usart.c...
+..\USER\bsp_usart.c(361): warning:  #550-D: variable "rxbuf"  was set but never used
+  	uint8_t  rxbuf[10] = {0};
+..\USER\bsp_usart.c: 1 warning, 0 errors
+compiling command.c...
+compiling bsp_DMA.c...
+compiling global.c...
+compiling Bsp_timer.c...
+compiling Drv_dsp_reset.c...
+..\USER\Drv_dsp_reset.c(26): warning:  #174-D: expression has no effect
+  			__NOP;
+..\USER\Drv_dsp_reset.c: 1 warning, 0 errors
+compiling bsp_adc.c...
+compiling bsp_i2c.c...
+compiling Drv_led.c...
+compiling drv_power_down.c...
+compiling gd32f103c_eval.c...
+compiling Drv_fpga.c...
+compiling drv_vpx.c...
+compiling Drv_ds18b20.c...
+compiling gd32f10x_crc.c...
+compiling gd32f10x_adc.c...
+compiling gd32f10x_dma.c...
+compiling gd32f10x_exti.c...
+compiling gd32f10x_gpio.c...
+compiling gd32f10x_fmc.c...
+assembling startup_gd32f10x_md.s...
+compiling gd32f10x_misc.c...
+compiling gd32f10x_i2c.c...
+compiling gd32f10x_pmu.c...
+compiling system_gd32f10x.c...
+compiling gd32f10x_rcu.c...
+compiling gd32f10x_usart.c...
+compiling gd32f10x_timer.c...
+linking...
+Program Size: Code=15284 RO-data=292 RW-data=124 ZI-data=11764  
+After Build - User command #1: fromelf --bin --output .\Objects\Project.bin .\Objects\Project.axf
+".\Objects\Project.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: GigaDevice
+                http://gd32mcu.com/data/documents/pack/GigaDevice.GD32F10x_DFP.2.0.2.pack
+                GigaDevice.GD32F10x_DFP.2.0.2
+                GigaDevice GD32F10x Series Device Support and Examples
+   * Component: GD32F103C Version: 2.0.1
+   * Component: ADC Version: 2.0.1
+   * Component: CRC Version: 2.0.1
+   * Component: DMA Version: 2.0.1
+   * Component: EXTI Version: 2.0.1
+   * Component: FMC Version: 2.0.1
+   * Component: GPIO Version: 2.0.1
+   * Component: I2C Version: 2.0.1
+   * Component: MISC Version: 2.0.1
+   * Component: PMU Version: 2.0.1
+   * Component: RCU Version: 2.0.1
+   * Component: TIMER Version: 2.0.1
+   * Component: USART Version: 2.0.1
+   * Component: GD32F10x_libopt Version: 2.0.1
+   * Component: Startup Version: 2.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_gd32f103rx
+  D:\install dir\keil\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\install dir\keil\Arm\Packs\GigaDevice\GD32F10x_DFP\2.0.2\Device\Firmware\Peripherals\inc
+  D:\install dir\keil\Arm\Packs\GigaDevice\GD32F10x_DFP\2.0.2\Device\Include
+  D:\install dir\keil\Arm\Packs\GigaDevice\GD32F10x_DFP\2.0.2\Device\Utilities
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: GigaDevice::Device:EVAL:GD32F103C:2.0.1
+      Source file:   Device\Utilities\gd32f103c_eval.c
+      Include file:  Device\Utilities\gd32f103c_eval.h
+
+   * Component: GigaDevice::Device:GD32F10x_StdPeripherals:ADC:2.0.1
+      Include file:  Device\Firmware\Peripherals\inc\gd32f10x_adc.h
+      Source file:   Device\Firmware\Peripherals\src\gd32f10x_adc.c
+
+   * Component: GigaDevice::Device:GD32F10x_StdPeripherals:CRC:2.0.1
+      Include file:  Device\Firmware\Peripherals\inc\gd32f10x_crc.h
+      Source file:   Device\Firmware\Peripherals\src\gd32f10x_crc.c
+
+   * Component: GigaDevice::Device:GD32F10x_StdPeripherals:DMA:2.0.1
+      Include file:  Device\Firmware\Peripherals\inc\gd32f10x_dma.h
+      Source file:   Device\Firmware\Peripherals\src\gd32f10x_dma.c
+
+   * Component: GigaDevice::Device:GD32F10x_StdPeripherals:EXTI:2.0.1
+      Source file:   Device\Firmware\Peripherals\src\gd32f10x_exti.c
+      Include file:  Device\Firmware\Peripherals\inc\gd32f10x_exti.h
+
+   * Component: GigaDevice::Device:GD32F10x_StdPeripherals:FMC:2.0.1
+      Include file:  Device\Firmware\Peripherals\inc\gd32f10x_fmc.h
+      Source file:   Device\Firmware\Peripherals\src\gd32f10x_fmc.c
+
+   * Component: GigaDevice::Device:GD32F10x_StdPeripherals:GPIO:2.0.1
+      Include file:  Device\Firmware\Peripherals\inc\gd32f10x_gpio.h
+      Source file:   Device\Firmware\Peripherals\src\gd32f10x_gpio.c
+
+   * Component: GigaDevice::Device:GD32F10x_StdPeripherals:I2C:2.0.1
+      Source file:   Device\Firmware\Peripherals\src\gd32f10x_i2c.c
+      Include file:  Device\Firmware\Peripherals\inc\gd32f10x_i2c.h
+
+   * Component: GigaDevice::Device:GD32F10x_StdPeripherals:MISC:2.0.1
+      Include file:  Device\Firmware\Peripherals\inc\gd32f10x_misc.h
+      Source file:   Device\Firmware\Peripherals\src\gd32f10x_misc.c
+
+   * Component: GigaDevice::Device:GD32F10x_StdPeripherals:PMU:2.0.1
+      Include file:  Device\Firmware\Peripherals\inc\gd32f10x_pmu.h
+      Source file:   Device\Firmware\Peripherals\src\gd32f10x_pmu.c
+
+   * Component: GigaDevice::Device:GD32F10x_StdPeripherals:RCU:2.0.1
+      Source file:   Device\Firmware\Peripherals\src\gd32f10x_rcu.c
+      Include file:  Device\Firmware\Peripherals\inc\gd32f10x_rcu.h
+
+   * Component: GigaDevice::Device:GD32F10x_StdPeripherals:TIMER:2.0.1
+      Source file:   Device\Firmware\Peripherals\src\gd32f10x_timer.c
+      Include file:  Device\Firmware\Peripherals\inc\gd32f10x_timer.h
+
+   * Component: GigaDevice::Device:GD32F10x_StdPeripherals:USART:2.0.1
+      Source file:   Device\Firmware\Peripherals\src\gd32f10x_usart.c
+      Include file:  Device\Firmware\Peripherals\inc\gd32f10x_usart.h
+
+   * Component: GigaDevice::Device:GD32F10x_libopt:2.0.1
+      Include file:  Device\Include\gd32f10x_libopt.h
+
+   * Component: GigaDevice::Device:Startup:2.0.1
+      Source file:   Device\Source\ARM\startup_gd32f10x_md.s
+      Include file:  Device\Include\gd32f10x.h
+      Source file:   Device\Source\system_gd32f10x.c
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
